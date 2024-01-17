@@ -1,0 +1,270 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+body{
+    font-family:montserrat;
+    gap: 30px;
+    background: none;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    flex-direction: row;
+}
+.Input-box{
+    position: relative;
+    width:250px;
+}
+.Input-box input{
+    width:100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background:#1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color:#fff;
+    font-size: 1em;
+}
+.input-box span{
+    position: absolute;
+    left:0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255,255,255,0.25);
+ 
+}
+header{
+    background:rgba(255,144,14,0.10);
+    padding: 50px 240px;
+}
+nav{
+    height:80px;
+    width: 100%;
+
+}
+nav>ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:black;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background:orange;
+    transition: 5s;
+}
+.nav-title{
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #131313;
+}
+/*banner styles*/
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4 rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color: #727272;
+}
+.btn-primary{
+    border-radius: 8px;
+    color:#fff;
+    background:#ff900E;
+   text-align: center;
+   justify-content: center;
+
+}
+.banner-img{
+    width: 100%;
+    margin-top: 20px;
+}
+.tours{
+  
+    align-items: center;
+}
+.tours-title{
+    font-size: 2.7px;
+    font-weight: 700;
+    color: #131313;
+}
+.tours-description{
+    color:#727272;
+}
+.img{
+    width: 100%;
+    margin-top: 20%;
+    justify-content: center;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    grid-template: column repeat(1,1fr);
+}
+.destination-container{
+    align-items: center;
+}
+.destination-img-container{
+    gap: 2.5rem;
+    align-items: center;
+}
+.destination-title{
+    font-size: 2.8 rem;
+}
+.destination-description{
+    color:#727272;
+}
+.Maldives{
+    position: absolute;
+}
+.Indonesia{
+    position: fixed;
+    top: 0px;
+}
+.Srilanka{
+    position: absolute;
+}
+.North America{
+    position: fixed;
+}
+.kashmir{
+    text-align: right;
+}
+.Bangladesh{
+    text-align: left;
+}
+.Bandorban{
+    text-align: center;
+}
+.why-us{
+    position: relative;
+    margin-bottom: 35px;
+}
+.why-us .box{
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.5s;
+    position: relative;
+    background-color: #333;
+    max-height: 230px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.why-us .box:hover {
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.why-us .box img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition:all ease 1s; 
+}
+.feature{
+    display: flex;
+    margin-top: 130px;
+    gap:100px;
+}
+.feature-content .travel{
+    border-radius: 8px;
+    background:#fff;
+    box-shadow:0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+} 
+.feature-img img{
+    height: 90%;
+    margin-left: 90%;
+}
+.travel{
+    position: relative;
+    border-radius: 8px;
+    background: #ff900E;
+    color:#fff;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+}
+.travel h3{
+    font-size: 1.5rem;
+}
+.travel p{
+    font-size: 4 rem;
+}
+
+.destination-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5 rem;
+}
+.destination-title{
+    font-size: 2.8 rem;
+}
+.facebook,.instagram,.twitter,.linkdin{
+    width: 64px;
+    height: 64px;
+    
+}
+
+@media screen and(max-width: 992px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction:column;
+    }
+    nav>ul{
+        gap: 10px;
+    }
+    .container{
+        grid-template: column repeat(1,1fr);
+    }
+    footer{
+        flex-direction:column;
+    }
+    .footer-column{
+        width: 100%;
+    }
+   .btn-primary{
+    margin-bottom: 15px;
+   }
+    
+
+}
+@media screen and(min-width: 992px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+    nav,
+    nav>ul,
+    .destination-img-container,
+    .feature{
+        flex-direction: column;
+    }
+}
